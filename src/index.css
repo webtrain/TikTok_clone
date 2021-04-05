@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+nav .nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.logo {
+  height: 60px;
+}
+
+img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.links a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.links img {
+  height: 40px;
+}
+
+.followers-column-item {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+
+.followers-column-item img {
+  height: 80%;
+  margin-right: 1rem;
+}
+
+.first {
+  margin-bottom: 3rem;
+}
+
+.suggested-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 400px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.top-accounts {
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  padding: 0.75rem 0;
+}
+
+.upload {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.upload-left h1 {
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+.upload-left p {
+  margin-top: 0;
+  font-size: 0.9rem;
+  color: rgb(160, 160, 160);
+}
+
+.upload-left .video-box {
+  height: 350px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.upload-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.upload-right form {
+  width: 100%;
+  position: relative;
+}
+
+.upload-right .form-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-right .form-control:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.upload-right .form-control label {
+  margin-right: 2rem;
+  display: inline-block;
+  width: 30%;
+}
+
+.upload-right .form-control input {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 70%
+}
+
+.upload-right form button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #444;
+  color: #fff;
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .home,
+  .upload {
+    grid-template-columns: 1fr;
+  }
+}
